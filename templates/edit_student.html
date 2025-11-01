@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+<h3>Edit Student</h3>
+<form method="POST">
+  <div class="mb-3">
+    <label class="form-label">Name</label>
+    <input type="text" class="form-control" name="name" value="{{ student.name }}" required>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Email</label>
+    <input type="email" class="form-control" name="email" value="{{ student.email }}" required>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Course</label>
+    <input type="text" class="form-control" name="course" value="{{ student.course }}" required>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Phone</label>
+    <input type="text" class="form-control" name="phone" value="{{ student.phone }}">
+  </div>
+  <button type="submit" class="btn btn-success">Update</button>
+  <a href="{{ url_for('index') }}" class="btn btn-secondary">Cancel</a>
+</form>
+{% endblock %}
