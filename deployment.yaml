@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: csclassesnikhil/people-manager:TAG
+        image: csclassesnikhil/people-master:TAG
         ports:
         - containerPort: 5000
