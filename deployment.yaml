@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: csclassesnikhil/people-master:TAG
+        image: csclassesnikhil/powerup-manager:TAG
         ports:
         - containerPort: 5000
